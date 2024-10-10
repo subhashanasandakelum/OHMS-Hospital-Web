@@ -23,9 +23,8 @@
                     <span class="user-name"><%= session.getAttribute("username") %></span>
                     <br>
                     <span class="user-role" id="user-role"><%= session.getAttribute("role") %></span>
-                </div>
-                <!-- Log Out button directly in the top bar -->
-                <a href="LogoutServlet" id="logout-btn" class="logout-btn">Log Out</a>
+                </div> 
+				<a href="#" onclick="confirmLogout()" id="logout-btn" class="logout-btn">Log Out</a>
             </div>
         </div>
     </div>
@@ -85,6 +84,7 @@
             <p>© 2024 Oasis Hospital Management System | All Rights Reserved</p>
         </div>
 
-    <script src="script.js"></script>
+    <script src="Logout.js"></script>
+    <script src="Active.js"></script>
 </body>
 </html>
