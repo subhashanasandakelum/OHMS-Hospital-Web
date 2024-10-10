@@ -11,46 +11,11 @@
 <body>
     
     <div class="container">
-        <!-- Top Bar -->
-        <div class="top-bar">
-            <div class="hospital-name">
-                <img src="img/hms.png" alt="Hospital Icon" class="hospital-icon"> Oasis Hospital Management System
-            </div>
-            <div class="user-info">
-                <img src="img/user.png" alt="User Icon" class="user-icon">
-                <div class="user-details">
-                    <!-- Display Username and Role from Session -->
-                    <span class="user-name"><%= session.getAttribute("username") %></span>
-                    <br>
-                    <span class="user-role" id="user-role"><%= session.getAttribute("role") %></span>
-                </div> 
-				<a href="#" onclick="confirmLogout()" id="logout-btn" class="logout-btn">Log Out</a>
-            </div>
-        </div>
+        <%@ include file="dashboardHeader.jsp" %>
     </div>
     
-        <!-- Sidebar -->
-            <!-- Sidebar -->
-       <!-- Inside the sidebar -->
-       <aside class="sidebar">
-        <ul class="sidebar-menu">
-            <li id="dashboard">
-                <a href="doctorDashboard.jsp">Dashboard</a>
-            </li>
-            <li id="view-patient details">
-                <a href="viewPatients.jsp"> <img src="img/icon1.png" alt="View Patients Icon" class="sidebar-icon">View Patient Details</a>
-            </li>
-            <li id="add-sessions">
-                <a href="addSessions.jsp"><img src="img/icon2.png" alt="Add Sessions Icon" class="sidebar-icon">Add Sessions</a>
-            </li>
-            <li id="my-appointments">
-                <a href="manageSessions.jsp"><img src="img/icon3.png" alt="Manage Sessions Icon" class="sidebar-icon">Manage Sessions</a>
-            </li>
-            <li id="health-records">
-                <a href="medicineInventory.jsp"> <img src="img/icon4.png" alt="Medicine Inventory Icon" class="sidebar-icon">Medicine Inventory</a>
-            </li>
-        </ul>
-    </aside>
+<%@ include file="dashboardSidebar.jsp" %>
+       
        
     <!-- Dashboard Section -->
 <section id="dashboard-section" class="dashboard-section">
@@ -79,12 +44,8 @@
     </div>
 </section>
 
-        <!-- Bottom Bar -->
-        <div class="bottom-bar">
-            <p>© 2024 Oasis Hospital Management System | All Rights Reserved</p>
-        </div>
+<%@ include file="dashboardFooter.jsp" %>
 
-    <script src="Logout.js"></script>
-    <script src="Active.js"></script>
+<script src="dashboard.js"></script>
 </body>
 </html>
