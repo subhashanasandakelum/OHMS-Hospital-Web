@@ -1,0 +1,8 @@
+.frm {
+    width: 50%;
+    border: 1px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: #e6f0ff;;
+}

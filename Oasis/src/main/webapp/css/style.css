@@ -1,0 +1,58 @@
+/* Reset default margins and paddings for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set body background to distinguish the layout */
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+.head {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+/* Navigation list styles */
+.nav_list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_list li {
+    margin: 0 15px;
+}
+
+.nav_list a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+/* Container to wrap content */
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

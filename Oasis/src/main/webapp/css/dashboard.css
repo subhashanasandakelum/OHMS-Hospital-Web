@@ -1,0 +1,81 @@
+body {
+    background-color: #e6f0ff;
+}
+
+
+.dashboard-section {
+    padding: 15px;  /* Reduced padding */
+    background-color: #fff;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+    height: calc(100vh - 140px); /* Reduced height for smaller appearance */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    margin-top: -10px; /* Space below the top bar */
+    margin-left: 325px; /* Space for the sidebar */
+    margin-right: 50px; 
+    margin-bottom: 10px;
+}
+
+
+/* Dashboard Grid */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between boxes */
+    width: 100%; /* Make the grid take full width */
+    max-width: 800px; /* Limit max width for centering */
+    margin: 0 auto; /* Center the grid */
+}
+
+/* Individual Dashboard Box */
+.dashboard-box {
+    background-color: #f1f5f9; /* Light background for boxes */
+    padding: 30px; /* Increased padding for elegance */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+    height: 220px; /* Fixed height for boxes */
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+    cursor: pointer; /* Change cursor to pointer for interactivity */
+}
+
+/* Pop-up effect on hover */
+.dashboard-box:hover {
+    transform: scale(1.05); /* Scale up the box */
+    background-color: #cce4f7; /* Slightly lighter background */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    opacity: 1; /* Make it clear */
+}
+
+/* Image Styles */
+.dashboard-box img {
+    width: 60px; /* Adjust width of icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between icon and text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover and active */
+}
+
+/* Dashboard Box Heading */
+.dashboard-box h3 {
+    margin-top: 5px; /* Space above heading */
+    font-size: 18px; /* Font size adjustment */
+    color: #333;
+}
+
+/* Dashboard Box Description */
+.dashboard-box p {
+    margin-top: 5px; /* Space between heading and description */
+    font-size: 14px; /* Font size for description */
+    color: #666; /* Softer color */
+}
+
+
+h2 {
+    margin-bottom: 20px;
+    color: #00487C; /* Softer heading color */
+}

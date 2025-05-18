@@ -10,9 +10,9 @@
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
   
-  <servlet>
+ <servlet>
     <servlet-name>LogoutServlet</servlet-name>
-    <servlet-class>com.dashboards.LogoutServlet</servlet-class>
+    <servlet-class>com.login.LogoutServlet</servlet-class>
 </servlet>
 
 <servlet-mapping>
@@ -29,6 +29,38 @@
 	<servlet-name>LoginServlet</servlet-name>
 	<url-pattern>/LoginServlet</url-pattern>
 </servlet-mapping>
-	
+
+
+<servlet>
+    <servlet-name>ManageSessionsServlet</servlet-name>
+    <servlet-class>com.controller.ManageSessionsServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ManageSessionsServlet</servlet-name>
+    <url-pattern>/ManageSessionsServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>EditSessionsServlet</servlet-name>
+    <servlet-class>com.controller.EditSessionsServlet</servlet-class>
+</servlet>
+    
+<servlet-mapping>
+    <servlet-name>EditSessionsServlet</servlet-name>
+    <url-pattern>/EditSessionsServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>InsertServlet</servlet-name>
+	<servlet-class>medicinepackage.InsertServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>InsertServlet</servlet-name>
+	<url-pattern>/InsertServlet</url-pattern>
+</servlet-mapping>
+
+
 
 </web-app>

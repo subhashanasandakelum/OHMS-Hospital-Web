@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* editSessions.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative; /* Required for absolute positioning */
+}
+
+header {
+    background-color: #14267f; /* Header color */
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: #14267f;
+    text-align: center;
+    margin-top: 20px;
+}
+
+a.button {
+    position: absolute; /* Keep it positioned absolutely */
+    top: 85px; /* Adjust this value based on the height of your header */
+    left: 20px; /* Distance from the left */
+    display: inline-block;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a.button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 30px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #14267f; /* Dark blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #0b1d5c; /* Darker blue on hover */
+}
+
+/* Add responsiveness for smaller screens */
+@media screen and (max-width: 768px) {
+    form {
+        width: 80%;
+    }
+
+    a.button {
+        margin: 10px 0; /* Reduce space for smaller screens */
+    }
+}
+
+footer {
+    margin-top: auto; /* Ensure footer stays at the bottom */
+}
+

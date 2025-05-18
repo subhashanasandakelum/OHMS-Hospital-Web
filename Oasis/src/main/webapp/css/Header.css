@@ -1,0 +1,30 @@
+
+.content {
+    margin-left:0;
+    margin-right: -12px;
+    flex: 1;
+    z-index: 1;
+}
+
+.header {
+    background-color: #14267f; /* Change this color to your preference */
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-left: -12px;
+}
+
+.proimage img{
+    width: 50px;
+    height: 50px;
+    gap: 10px;
+}
+
+.proimage {
+    gap: 20px;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+}

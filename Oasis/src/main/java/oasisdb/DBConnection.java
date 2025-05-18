@@ -9,22 +9,21 @@ public class DBConnection {
     private static final String USER = "root";
     private static final String PASSWORD = "2024Oasis123";
 
+    // Private constructor to prevent instantiation
+    private DBConnection() { }
+
     public static Connection getConnection() {
-        Connection connection = null;
         try {
-            connection = DriverManager.getConnection(URL, USER, PASSWORD);
-            System.out.println("Connected to the database successfully!");
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            return DriverManager.getConnection(URL, USER, PASSWORD);
         } catch (SQLException e) {
             System.out.println("Error connecting to the database.");
             e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            System.out.println("Error loading the driver.");
+            e.printStackTrace();
         }
-        return connection;
-    }
-
-    public static void main(String[] args) {
-        // Test connection
-        getConnection();
+        return null;
     }
 }
-
 
